@@ -19,5 +19,6 @@ This repo is an non-angular application, which added a third party library corne
 
 5. Visit `http://localhost:3000/` in new started Chrome.
 
-6. Click "window leveling" button multiple times, the time cost of for loop from cornerstone library will output in the console. The performance is pretty good.
+6. Click "window leveling" button multiple times, the time cost of for loop from cornerstone library will output in the console. The performance is not good.
+
 <a href="https://imgur.com/4GTg1TG"><img src="https://i.imgur.com/4GTg1TG.png" title="source: imgur.com" width="300"/></a>
