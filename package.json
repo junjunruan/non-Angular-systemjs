@@ -1,0 +1,29 @@
+{
+  "name": "non-Angular-systemjs",
+  "version": "1.0.0",
+  "description": "SystemJS/TypeScript demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/TypeScriptSamples.git"
+  },
+  "dependencies": {
+    "http-server": "0.9.0",
+    "systemjs": "0.18.0",
+    "jquery": "3.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "3.2.0",
+    "typescript": "2.3.0",
+    "lite-server": "2.2.2",
+    "@types/node": "6.0.46",
+    "@types/jasmine": "2.5.36"
+  },
+  "scripts": {
+    "start-http": "node node_modules/http-server/bin/http-server -o",
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "serve": "lite-server -c=bs-config.json",
+    "prestart": "yarn run build",
+    "start": "concurrently \"yarn run build:watch\" \"yarn run serve\""
+  }
+}
